@@ -1,0 +1,172 @@
+.messages {
+	padding: 30px 10px 30px 40px;
+	width: 100%;
+	height: 900px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	@media (max-width: 768px) {
+		padding: 15px 0 15px 20px;
+	}
+	&__chat {
+		width: 100%;
+		padding: 0 20px 0 0;
+		@media (max-width: 768px) {
+			padding: 0 20px 0 0;
+		}
+	}
+	&__dialog {
+		display: flex;
+		position: relative;
+		padding: 20px 0;
+		&_answer {
+			flex-direction: row-reverse;
+			.messages__avatar {
+				margin-left: 30px;
+				margin-right: 0;
+				@media (max-width: 576px) {
+					margin-left: 10px;
+				}
+			}
+			.messages__text {
+				text-align: right;
+				background: #f2f4f7;
+				color: #76797e;
+			}
+			.messages__svg {
+				transform: scaleX(-1);
+				top: 27px;
+				right: -16px;
+				left: auto;
+				fill: #f2f4f7;
+				@media (max-width: 576px) {
+					top: 40px;
+				}
+			}
+		}
+	}
+	&__avatar {
+		width: 60px;
+		height: 60px;
+		min-width: 60px;
+		margin-right: 30px;
+		border-radius: 50%;
+		background: url(../img/any-picture.png) 100% 100% / cover no-repeat;
+		@media (max-width: 576px) {
+			width: 30px;
+			height: 30px;
+			min-width: 30px;
+			margin-right: 10px;
+		}
+	}
+	&__text {
+		background: #1585ff;
+		color: #fff;
+		font-size: 14px;
+		line-height: 24px;
+		padding: 20px;
+		border-radius: 5px;
+		position: relative;
+		@media (max-width: 768px) {
+			font-size: 10px;
+			letter-spacing: 1px;
+		}
+		.messages__author {
+			font-size: 15px;
+			font-weight: 500;
+			margin-right: 10px;
+			@media (max-width: 768px) {
+				font-size: 12px;
+			}
+			&::after {
+				content: '|';
+				margin-left: 12px;
+			}
+		}
+	}
+	&__svg {
+		fill: #1585ff;
+		position: absolute;
+		top: 27px;
+		left: -16px;
+		width: 16px;
+		height: 19px;
+		@media (max-width: 576px) {
+			top: 40px;
+		}
+	}
+	&__info {
+		margin-bottom: 10px;
+	}
+	&__content {
+
+	}
+	// ..............submit........
+	&__submit {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		min-height: 70px;
+		margin-top: 20px;
+		@media (max-width: 576px) {
+			min-height: 140px;
+		}
+	}
+	&__field {
+		width: 100%;
+		height: 70px;
+		border-radius: 3px;
+		background-color: #f9f9f9;
+		box-shadow: 0px 14px 30px 0px rgba(0, 0, 0, 0.1);
+		border: 1px solid #ededed;
+		padding: 0 106px 0 66px;
+		line-height: 70px;
+		outline: none;
+		color: #9da0a4;
+		@media (max-width: 768px) {
+			padding-right: 76px; 
+		}
+		@media (max-width: 576px) {
+			padding: 0 10px 0 35px;
+		}
+	}
+	&__form {
+		position: relative;
+		width: 100%;
+		.icon-camera {
+			display: inline-block;
+			position: absolute;
+			top: 50%;
+   			left: 33px;
+    		transform: translate(-50%, -50%);
+    		@media (max-width: 576px) {
+				top: 25%;
+				left: 20px;
+			}
+		}
+	}
+	&__button {
+		@include button-clear;
+		position: absolute;
+		right: 0;
+		top: 0;	
+		height: 70px;
+		border-radius: 3px;
+		width: 100px;
+		background-color: #1d2025;
+		cursor: pointer;
+		@media (max-width: 768px) {
+			width: 70px;
+		}
+		@media (max-width: 576px) {
+			width: 100%;
+			top: 70px;
+		}
+		&:active {
+			background-color: #1585ff;
+		}
+		.icon-arrow-submit {
+			display: inline-block;
+		}
+	}
+}

@@ -1,0 +1,114 @@
+.aside {
+	width: 100px;
+	background: #fff;
+	padding: 40px 0 0 0;
+	border-top: 1px solid rgb(229, 232, 238);
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.06);
+	transition: .5s;
+	z-index: 1;
+	overflow: hidden;
+	position: relative;
+	@media (max-width: 992px) {
+		position: absolute;
+		height: 100%;
+	}
+	@media (max-width: 576px) {
+    	position: absolute;
+    	width: 50px;
+    	height: inherit;
+	}
+	&__title {
+		padding: 0 0 0 40px;
+		color: #acb1b9;
+		font-size: 14px;
+		margin-bottom: 16px;
+		@media (max-width: 576px) {
+    		font-size: 10px;
+    		padding: 0 0 0 15px;
+		}
+	}
+	&__lest {
+		padding: 0 5px 0 0;
+	}
+	&__item {
+
+	}
+	&__link {
+		display: block;
+		padding: 15px 34px;
+		border-left: 6px solid transparent;
+		transition: all ease-out .3s;
+		color: transparent;
+		font-size: 16px;
+		white-space: nowrap;
+		@media (max-width: 576px) {
+    		padding: 10px 12px;
+		}
+		&:hover {
+			background: #f2f4f7;
+			border-left: 6px solid #1585ff;
+		}
+		span {
+			margin-right: 10px;
+			display: inline-block;
+		}	
+	}
+	.option {
+		@include button-clear;
+		font-size: 20px;
+		color: #929bab;
+		position: absolute;
+		bottom: 30px;
+		left: calc(50% - 35px);
+		border: 1px solid rgb(238, 240, 244);
+		border-radius: 3px;
+		background-color: rgb(249, 249, 249);
+		padding: 13px 25px;
+		cursor: pointer;
+		transition: transform .3s;
+		@media (max-width: 576px) {
+    		display: none;
+		}
+		&:hover {
+			color: #1585ff;			
+			transition: .3s;
+			box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+			transform: rotate(360deg);
+			transform: scale(1.1);
+		}
+		&:active {
+			transition: .1s;
+			transform: translateY(2px);
+			box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+		}
+	}
+}
+.aside_active {
+	width: 290px;
+	z-index: 50;
+	a {
+		color: #76797e;
+	}
+	@media (max-width: 576px) {
+		width: 200px;
+		height: 500px;
+	}
+	.option {
+		@media (max-width: 576px) {
+    		display: block;
+		}
+	}
+}
+.aside.aside_active + .main { 
+	transition: .5s;
+	width: calc(100% - 290px);
+	@media (max-width: 992px) {
+		transition: none;
+		width: calc(100% - 100px);
+		margin-left: 100px;
+	}
+	@media (max-width: 576px) {
+    	width: 100%;
+    	margin-left: 0;
+	}
+}

@@ -1,0 +1,114 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-analytics {
+  background-image: url(../../img/sprite.png);
+  background-position: -72px -19px;
+  width: 18px;
+  height: 14px;
+}
+.icon-arrow-submit {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -54px;
+  width: 24px;
+  height: 14px;
+}
+.icon-arrow {
+  background-image: url(../../img/sprite.png);
+  background-position: -30px -38px;
+  width: 23px;
+  height: 15px;
+}
+.icon-camera {
+  background-image: url(../../img/sprite.png);
+  background-position: -72px 0px;
+  width: 19px;
+  height: 19px;
+}
+.icon-chat {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px 0px;
+  width: 36px;
+  height: 38px;
+}
+.icon-cloud-hover {
+  background-image: url(../../img/sprite.png);
+  background-position: -30px -68px;
+  width: 16px;
+  height: 12px;
+}
+.icon-cloud-save {
+  background-image: url(../../img/sprite.png);
+  background-position: -71px -54px;
+  width: 16px;
+  height: 12px;
+}
+.icon-cloud {
+  background-image: url(../../img/sprite.png);
+  background-position: -36px 0px;
+  width: 36px;
+  height: 38px;
+}
+.icon-flag {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -38px;
+  width: 30px;
+  height: 16px;
+}
+.icon-inbox {
+  background-image: url(../../img/sprite.png);
+  background-position: -56px -54px;
+  width: 15px;
+  height: 13px;
+}
+.icon-invoice {
+  background-image: url(../../img/sprite.png);
+  background-position: -40px -54px;
+  width: 16px;
+  height: 13px;
+}
+.icon-marketplace {
+  background-image: url(../../img/sprite.png);
+  background-position: -24px -54px;
+  width: 16px;
+  height: 14px;
+}
+.icon-overview {
+  background-image: url(../../img/sprite.png);
+  background-position: -53px -38px;
+  width: 15px;
+  height: 15px;
+}
+.icon-projects {
+  background-image: url(../../img/sprite.png);
+  background-position: -72px -33px;
+  width: 15px;
+  height: 16px;
+}
+.icon-support {
+  background-image: url(../../img/sprite.png);
+  background-position: 0px -68px;
+  width: 15px;
+  height: 16px;
+}
+.icon-your-profile {
+  background-image: url(../../img/sprite.png);
+  background-position: -15px -68px;
+  width: 15px;
+  height: 16px;
+}
