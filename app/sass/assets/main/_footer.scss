@@ -1,0 +1,21 @@
+.footer {
+	width: 100%;
+	background-color: rgb(240, 240, 240);
+	padding: 26px 40px;
+	p {
+		// font-family: montserrat-light;
+		font-size: 11px;
+		color: #a2a7af;
+		text-transform: uppercase;
+	}
+	a {
+		color: #80aadd;
+		&:hover {
+			transition: .2s;
+			color: green;
+		}
+		&:active {
+			color: red;
+		}
+	}
+}

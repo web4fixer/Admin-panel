@@ -1,0 +1,28 @@
+//import bootstrap components
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap/scss/nav';
+@import '../../node_modules/bootstrap/scss/breadcrumb';
+@import '../../node_modules/bootstrap/scss/tooltip';
+
+//scroll
+@import 'assets/libs/jquery.scrollbar';
+
+
+@import 'assets/vars';
+@import 'assets/mixins';
+@import 'assets/reset';
+@import 'assets/base';
+@import 'assets/header/logo-menu';
+@import 'assets/header/search';
+@import 'assets/aside/aside';
+@import 'assets/main/main-header';
+@import 'assets/main/main-content';
+@import 'assets/main/profile-content';
+@import 'assets/main/tables';
+@import 'assets/main/footer';
+@import 'assets/tab-content-profile/main-profile';
+@import 'assets/messeges/messeges';
+@import 'assets/form/form';
+@import 'assets/form/select';
